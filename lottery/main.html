@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row lottery-content">
+        <div class="col-md-3 text-center">
+            <div>第 <span class="">{{numberList.data[0].expect}}</span> 离截止时间</div>
+            <div class="openTime">00:18:58</div>
+        </div>
+        <div class="col-md-6 text-center openNum-list">
+            <div>{{numberList.code}} 第<span class="">{{numberList.data[0].expect}}</span> 期号码</div>
+            <div class="">
+                <span class="openNum"   ng-repeat="code in openNum">{{code}}</span>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class=""><span>期次</span><span>开奖号码</span></div>
+            <div ng-repeat="list in numberList.data">
+                <span>{{list.expect}}</span>
+                <span>{{list.opencode}}</span>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- carousel-->
+<!--<div class="container">-->
+    <!--<div  data-interval="1000" class="carousel slide" data-ride="carousel" id="carousel">-->
+        <!--<ul class="carousel-indicators">-->
+            <!--<li data-target="#carousel" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#carousel" data-slide-to="1"></li>-->
+            <!--<li data-target="#carousel" data-slide-to="2"></li>-->
+        <!--</ul>-->
+        <!--<div class="carousel-inner">-->
+            <!--<div class="item active">-->
+                <!--<a href="#/fruit">-->
+                    <!--<img src="images/carousel1.jpg" alt="" class="img-responsive"/>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="item">-->
+                <!--<a href="#/juice">-->
+                    <!--<img src="images/carousel2.jpg" alt="" class="img-responsive"/>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="item">-->
+                <!--<a href="#/package">-->
+                    <!--<img src="images/carousel3.jpg" alt="" class="img-responsive"/>-->
+                <!--</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<a href="#carousel" data-slide="prev" class="carousel-control left">-->
+            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+            <!--<span class="sr-only">上一张</span>-->
+        <!--</a>-->
+        <!--<a href="#carousel" data-slide="next" class="carousel-control right">-->
+            <!--<span class="glyphicon glyphicon-chevron-right" ></span>-->
+            <!--<span class="sr-only">下一步</span>-->
+        <!--</a>-->
+    <!--</div>-->
+<!--</div>-->
+
+
